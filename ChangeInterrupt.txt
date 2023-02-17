@@ -1,0 +1,9 @@
+void  __attribute__((__interrupt__, no_auto_psv)) _CNInterrupt()
+{
+int VPotRefence;
+while (ADSTATbits.P2RDY ==0);
+VPotRefence=ADCBUF5;
+VPotRefence=VPotRefence<<5;
+BuckVoltagePID.controlReference=VPotRefence;
+IFS1bits.CNIF=0; 	//Habilita interrupcon de sw1
+}

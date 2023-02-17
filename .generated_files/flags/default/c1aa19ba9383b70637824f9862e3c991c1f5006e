@@ -1,0 +1,1 @@
+ -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  -I"inc" -I"." -Wa,-g,--no-relax,-g$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"D:\D\GARRANTZITSUENA\ESKOLAK\EP\PRACTICAS\practica dc_dc\DSP_dcdc\practica_dspic_GettingStarted\BUCK2_16BIT_28_PIN_TIPO_II\src\isr_asm.s
